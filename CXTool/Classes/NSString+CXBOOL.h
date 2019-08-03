@@ -1,5 +1,4 @@
 //
-//  NSString+BOOL.h
 //  MedicalCustomer
 //
 //  Created by 陈贤 on 2018/9/7.
