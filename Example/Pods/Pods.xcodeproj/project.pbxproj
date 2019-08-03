@@ -10,25 +10,25 @@
 		03B6AD413496E8B56410DDF495DD90A8 /* CXTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC117FF3EDB9DB4EE998303DF1083EA /* CXTool-dummy.m */; };
 		073601E491B4A986E4BD5B493D92C5B8 /* CXTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CAEE6AC5DDA12523BACEAB63FF3E3C /* CXTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FA8F7C15C0AB3B49A210D0A78F22F89 /* Pods-CXTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3DB79945B228A19E05A9679B3114E6 /* Pods-CXTool_Tests-dummy.m */; };
-		7D546B3122F55B1C00161DC9 /* UIButton+CXExpandBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B0E22F55B1900161DC9 /* UIButton+CXExpandBtn.h */; };
-		7D546B3322F55B1C00161DC9 /* UIImage+CXExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B1022F55B1900161DC9 /* UIImage+CXExtension.h */; };
-		7D546B3422F55B1C00161DC9 /* UISearchBar+textFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B1122F55B1900161DC9 /* UISearchBar+textFiled.m */; };
-		7D546B3522F55B1C00161DC9 /* UIViewController+Dealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B1222F55B1900161DC9 /* UIViewController+Dealloc.h */; };
-		7D546B3922F55B1C00161DC9 /* UIButton+CXExpandBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B1622F55B1900161DC9 /* UIButton+CXExpandBtn.m */; };
-		7D546B3A22F55B1C00161DC9 /* NSString+CXBOOL.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B1722F55B1A00161DC9 /* NSString+CXBOOL.h */; };
-		7D546B3B22F55B1C00161DC9 /* NSString+CXEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B1822F55B1A00161DC9 /* NSString+CXEncrypt.h */; };
-		7D546B3C22F55B1C00161DC9 /* UIViewController+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B1922F55B1A00161DC9 /* UIViewController+Dealloc.m */; };
-		7D546B3D22F55B1C00161DC9 /* NSString+CXEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B1A22F55B1A00161DC9 /* NSString+CXEncrypt.m */; };
-		7D546B3E22F55B1C00161DC9 /* UIButton+ImageTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B1B22F55B1A00161DC9 /* UIButton+ImageTitleStyle.m */; };
-		7D546B3F22F55B1C00161DC9 /* CXTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B1C22F55B1A00161DC9 /* CXTool.h */; };
-		7D546B4422F55B1C00161DC9 /* NSString+CXExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B2122F55B1A00161DC9 /* NSString+CXExtension.h */; };
-		7D546B4522F55B1C00161DC9 /* NSString+CXDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B2222F55B1B00161DC9 /* NSString+CXDevice.h */; };
-		7D546B4722F55B1C00161DC9 /* NSString+CXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B2422F55B1B00161DC9 /* NSString+CXExtension.m */; };
-		7D546B4822F55B1C00161DC9 /* UIButton+ImageTitleStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B2522F55B1B00161DC9 /* UIButton+ImageTitleStyle.h */; };
-		7D546B4B22F55B1C00161DC9 /* UISearchBar+textFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B2822F55B1B00161DC9 /* UISearchBar+textFiled.h */; };
-		7D546B4C22F55B1C00161DC9 /* NSString+CXBOOL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B2922F55B1B00161DC9 /* NSString+CXBOOL.m */; };
-		7D546B4D22F55B1C00161DC9 /* UIImage+CXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B2A22F55B1B00161DC9 /* UIImage+CXExtension.m */; };
-		7D546B4E22F55B1C00161DC9 /* NSString+CXDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B2B22F55B1B00161DC9 /* NSString+CXDevice.m */; };
+		7D546B6522F56B3D00161DC9 /* UIButton+ImageTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B5222F56B3C00161DC9 /* UIButton+ImageTitleStyle.m */; };
+		7D546B6622F56B3D00161DC9 /* UIImage+CXExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B5322F56B3C00161DC9 /* UIImage+CXExtension.h */; };
+		7D546B6722F56B3D00161DC9 /* UIButton+ImageTitleStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B5422F56B3C00161DC9 /* UIButton+ImageTitleStyle.h */; };
+		7D546B6822F56B3D00161DC9 /* UIButton+CXExpandBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B5522F56B3C00161DC9 /* UIButton+CXExpandBtn.h */; };
+		7D546B6922F56B3D00161DC9 /* UIButton+CXExpandBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B5622F56B3C00161DC9 /* UIButton+CXExpandBtn.m */; };
+		7D546B6A22F56B3D00161DC9 /* NSString+CXBOOL.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B5722F56B3C00161DC9 /* NSString+CXBOOL.m */; };
+		7D546B6B22F56B3D00161DC9 /* UIViewController+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B5822F56B3C00161DC9 /* UIViewController+Dealloc.m */; };
+		7D546B6C22F56B3D00161DC9 /* UIViewController+Dealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B5922F56B3D00161DC9 /* UIViewController+Dealloc.h */; };
+		7D546B6D22F56B3D00161DC9 /* NSString+CXExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B5A22F56B3D00161DC9 /* NSString+CXExtension.h */; };
+		7D546B6E22F56B3D00161DC9 /* UISearchBar+textFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B5B22F56B3D00161DC9 /* UISearchBar+textFiled.m */; };
+		7D546B6F22F56B3D00161DC9 /* NSString+CXEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B5C22F56B3D00161DC9 /* NSString+CXEncrypt.h */; };
+		7D546B7022F56B3D00161DC9 /* CXTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B5D22F56B3D00161DC9 /* CXTool.h */; };
+		7D546B7122F56B3D00161DC9 /* NSString+CXDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B5E22F56B3D00161DC9 /* NSString+CXDevice.h */; };
+		7D546B7222F56B3D00161DC9 /* NSString+CXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B5F22F56B3D00161DC9 /* NSString+CXExtension.m */; };
+		7D546B7322F56B3D00161DC9 /* NSString+CXBOOL.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B6022F56B3D00161DC9 /* NSString+CXBOOL.h */; };
+		7D546B7422F56B3D00161DC9 /* UIImage+CXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B6122F56B3D00161DC9 /* UIImage+CXExtension.m */; };
+		7D546B7522F56B3D00161DC9 /* UISearchBar+textFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546B6222F56B3D00161DC9 /* UISearchBar+textFiled.h */; };
+		7D546B7622F56B3D00161DC9 /* NSString+CXEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B6322F56B3D00161DC9 /* NSString+CXEncrypt.m */; };
+		7D546B7722F56B3D00161DC9 /* NSString+CXDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B6422F56B3D00161DC9 /* NSString+CXDevice.m */; };
 		871E7AB6186BEAFEC19BDFDAB0BE353D /* Pods-CXTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1AECE8869CC0F0DABCB61048A09699 /* Pods-CXTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E5C657F3EB4450423CF245C9A5210BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		EF1182D8AD2DE7DED08EE6FD67679528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -57,25 +57,25 @@
 		4CC117FF3EDB9DB4EE998303DF1083EA /* CXTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CXTool-dummy.m"; sourceTree = "<group>"; };
 		5C5197794CFA253AA6B9F0D3C08B6C6B /* CXTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CXTool.modulemap; sourceTree = "<group>"; };
 		66EDA39791C81DCD53C8E03644DD350B /* CXTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CXTool-prefix.pch"; sourceTree = "<group>"; };
-		7D546B0E22F55B1900161DC9 /* UIButton+CXExpandBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CXExpandBtn.h"; sourceTree = "<group>"; };
-		7D546B1022F55B1900161DC9 /* UIImage+CXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CXExtension.h"; sourceTree = "<group>"; };
-		7D546B1122F55B1900161DC9 /* UISearchBar+textFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+textFiled.m"; sourceTree = "<group>"; };
-		7D546B1222F55B1900161DC9 /* UIViewController+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Dealloc.h"; sourceTree = "<group>"; };
-		7D546B1622F55B1900161DC9 /* UIButton+CXExpandBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CXExpandBtn.m"; sourceTree = "<group>"; };
-		7D546B1722F55B1A00161DC9 /* NSString+CXBOOL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CXBOOL.h"; sourceTree = "<group>"; };
-		7D546B1822F55B1A00161DC9 /* NSString+CXEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CXEncrypt.h"; sourceTree = "<group>"; };
-		7D546B1922F55B1A00161DC9 /* UIViewController+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Dealloc.m"; sourceTree = "<group>"; };
-		7D546B1A22F55B1A00161DC9 /* NSString+CXEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CXEncrypt.m"; sourceTree = "<group>"; };
-		7D546B1B22F55B1A00161DC9 /* UIButton+ImageTitleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleStyle.m"; sourceTree = "<group>"; };
-		7D546B1C22F55B1A00161DC9 /* CXTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXTool.h; sourceTree = "<group>"; };
-		7D546B2122F55B1A00161DC9 /* NSString+CXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CXExtension.h"; sourceTree = "<group>"; };
-		7D546B2222F55B1B00161DC9 /* NSString+CXDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CXDevice.h"; sourceTree = "<group>"; };
-		7D546B2422F55B1B00161DC9 /* NSString+CXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CXExtension.m"; sourceTree = "<group>"; };
-		7D546B2522F55B1B00161DC9 /* UIButton+ImageTitleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleStyle.h"; sourceTree = "<group>"; };
-		7D546B2822F55B1B00161DC9 /* UISearchBar+textFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+textFiled.h"; sourceTree = "<group>"; };
-		7D546B2922F55B1B00161DC9 /* NSString+CXBOOL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CXBOOL.m"; sourceTree = "<group>"; };
-		7D546B2A22F55B1B00161DC9 /* UIImage+CXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CXExtension.m"; sourceTree = "<group>"; };
-		7D546B2B22F55B1B00161DC9 /* NSString+CXDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CXDevice.m"; sourceTree = "<group>"; };
+		7D546B5222F56B3C00161DC9 /* UIButton+ImageTitleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ImageTitleStyle.m"; path = "CXTool/Classes/UIButton+ImageTitleStyle.m"; sourceTree = "<group>"; };
+		7D546B5322F56B3C00161DC9 /* UIImage+CXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+CXExtension.h"; path = "CXTool/Classes/UIImage+CXExtension.h"; sourceTree = "<group>"; };
+		7D546B5422F56B3C00161DC9 /* UIButton+ImageTitleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+ImageTitleStyle.h"; path = "CXTool/Classes/UIButton+ImageTitleStyle.h"; sourceTree = "<group>"; };
+		7D546B5522F56B3C00161DC9 /* UIButton+CXExpandBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+CXExpandBtn.h"; path = "CXTool/Classes/UIButton+CXExpandBtn.h"; sourceTree = "<group>"; };
+		7D546B5622F56B3C00161DC9 /* UIButton+CXExpandBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+CXExpandBtn.m"; path = "CXTool/Classes/UIButton+CXExpandBtn.m"; sourceTree = "<group>"; };
+		7D546B5722F56B3C00161DC9 /* NSString+CXBOOL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXBOOL.m"; path = "CXTool/Classes/NSString+CXBOOL.m"; sourceTree = "<group>"; };
+		7D546B5822F56B3C00161DC9 /* UIViewController+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Dealloc.m"; path = "CXTool/Classes/UIViewController+Dealloc.m"; sourceTree = "<group>"; };
+		7D546B5922F56B3D00161DC9 /* UIViewController+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Dealloc.h"; path = "CXTool/Classes/UIViewController+Dealloc.h"; sourceTree = "<group>"; };
+		7D546B5A22F56B3D00161DC9 /* NSString+CXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+CXExtension.h"; path = "CXTool/Classes/NSString+CXExtension.h"; sourceTree = "<group>"; };
+		7D546B5B22F56B3D00161DC9 /* UISearchBar+textFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UISearchBar+textFiled.m"; path = "CXTool/Classes/UISearchBar+textFiled.m"; sourceTree = "<group>"; };
+		7D546B5C22F56B3D00161DC9 /* NSString+CXEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+CXEncrypt.h"; path = "CXTool/Classes/NSString+CXEncrypt.h"; sourceTree = "<group>"; };
+		7D546B5D22F56B3D00161DC9 /* CXTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CXTool.h; path = CXTool/Classes/CXTool.h; sourceTree = "<group>"; };
+		7D546B5E22F56B3D00161DC9 /* NSString+CXDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+CXDevice.h"; path = "CXTool/Classes/NSString+CXDevice.h"; sourceTree = "<group>"; };
+		7D546B5F22F56B3D00161DC9 /* NSString+CXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXExtension.m"; path = "CXTool/Classes/NSString+CXExtension.m"; sourceTree = "<group>"; };
+		7D546B6022F56B3D00161DC9 /* NSString+CXBOOL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+CXBOOL.h"; path = "CXTool/Classes/NSString+CXBOOL.h"; sourceTree = "<group>"; };
+		7D546B6122F56B3D00161DC9 /* UIImage+CXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CXExtension.m"; path = "CXTool/Classes/UIImage+CXExtension.m"; sourceTree = "<group>"; };
+		7D546B6222F56B3D00161DC9 /* UISearchBar+textFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UISearchBar+textFiled.h"; path = "CXTool/Classes/UISearchBar+textFiled.h"; sourceTree = "<group>"; };
+		7D546B6322F56B3D00161DC9 /* NSString+CXEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXEncrypt.m"; path = "CXTool/Classes/NSString+CXEncrypt.m"; sourceTree = "<group>"; };
+		7D546B6422F56B3D00161DC9 /* NSString+CXDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXDevice.m"; path = "CXTool/Classes/NSString+CXDevice.m"; sourceTree = "<group>"; };
 		8BD0D222B9E211448582C6D2634FD976 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8F3DB79945B228A19E05A9679B3114E6 /* Pods-CXTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CXTool_Tests-dummy.m"; sourceTree = "<group>"; };
 		9BB7B9AA64BDED470F81E7F413E78817 /* CXTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CXTool-Info.plist"; sourceTree = "<group>"; };
@@ -111,25 +111,25 @@
 		1B28412CE9D6C6DE9C38CD0E8A1F7844 /* CXTool */ = {
 			isa = PBXGroup;
 			children = (
-				7D546B1C22F55B1A00161DC9 /* CXTool.h */,
-				7D546B1722F55B1A00161DC9 /* NSString+CXBOOL.h */,
-				7D546B2922F55B1B00161DC9 /* NSString+CXBOOL.m */,
-				7D546B2122F55B1A00161DC9 /* NSString+CXExtension.h */,
-				7D546B2422F55B1B00161DC9 /* NSString+CXExtension.m */,
-				7D546B2222F55B1B00161DC9 /* NSString+CXDevice.h */,
-				7D546B2B22F55B1B00161DC9 /* NSString+CXDevice.m */,
-				7D546B1822F55B1A00161DC9 /* NSString+CXEncrypt.h */,
-				7D546B1A22F55B1A00161DC9 /* NSString+CXEncrypt.m */,
-				7D546B2522F55B1B00161DC9 /* UIButton+ImageTitleStyle.h */,
-				7D546B1B22F55B1A00161DC9 /* UIButton+ImageTitleStyle.m */,
-				7D546B0E22F55B1900161DC9 /* UIButton+CXExpandBtn.h */,
-				7D546B1622F55B1900161DC9 /* UIButton+CXExpandBtn.m */,
-				7D546B1022F55B1900161DC9 /* UIImage+CXExtension.h */,
-				7D546B2A22F55B1B00161DC9 /* UIImage+CXExtension.m */,
-				7D546B2822F55B1B00161DC9 /* UISearchBar+textFiled.h */,
-				7D546B1122F55B1900161DC9 /* UISearchBar+textFiled.m */,
-				7D546B1222F55B1900161DC9 /* UIViewController+Dealloc.h */,
-				7D546B1922F55B1A00161DC9 /* UIViewController+Dealloc.m */,
+				7D546B5D22F56B3D00161DC9 /* CXTool.h */,
+				7D546B6022F56B3D00161DC9 /* NSString+CXBOOL.h */,
+				7D546B5722F56B3C00161DC9 /* NSString+CXBOOL.m */,
+				7D546B5E22F56B3D00161DC9 /* NSString+CXDevice.h */,
+				7D546B6422F56B3D00161DC9 /* NSString+CXDevice.m */,
+				7D546B5C22F56B3D00161DC9 /* NSString+CXEncrypt.h */,
+				7D546B6322F56B3D00161DC9 /* NSString+CXEncrypt.m */,
+				7D546B5A22F56B3D00161DC9 /* NSString+CXExtension.h */,
+				7D546B5F22F56B3D00161DC9 /* NSString+CXExtension.m */,
+				7D546B5522F56B3C00161DC9 /* UIButton+CXExpandBtn.h */,
+				7D546B5622F56B3C00161DC9 /* UIButton+CXExpandBtn.m */,
+				7D546B5422F56B3C00161DC9 /* UIButton+ImageTitleStyle.h */,
+				7D546B5222F56B3C00161DC9 /* UIButton+ImageTitleStyle.m */,
+				7D546B5322F56B3C00161DC9 /* UIImage+CXExtension.h */,
+				7D546B6122F56B3D00161DC9 /* UIImage+CXExtension.m */,
+				7D546B6222F56B3D00161DC9 /* UISearchBar+textFiled.h */,
+				7D546B5B22F56B3D00161DC9 /* UISearchBar+textFiled.m */,
+				7D546B5922F56B3D00161DC9 /* UIViewController+Dealloc.h */,
+				7D546B5822F56B3C00161DC9 /* UIViewController+Dealloc.m */,
 				1E63120403725CF98342B144563B9AA2 /* Pod */,
 				E634406F0340F59CD89D95ED8368C486 /* Support Files */,
 			);
@@ -237,17 +237,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D546B6822F56B3D00161DC9 /* UIButton+CXExpandBtn.h in Headers */,
 				073601E491B4A986E4BD5B493D92C5B8 /* CXTool-umbrella.h in Headers */,
-				7D546B4B22F55B1C00161DC9 /* UISearchBar+textFiled.h in Headers */,
-				7D546B3A22F55B1C00161DC9 /* NSString+CXBOOL.h in Headers */,
-				7D546B3322F55B1C00161DC9 /* UIImage+CXExtension.h in Headers */,
-				7D546B4522F55B1C00161DC9 /* NSString+CXDevice.h in Headers */,
-				7D546B3F22F55B1C00161DC9 /* CXTool.h in Headers */,
-				7D546B4822F55B1C00161DC9 /* UIButton+ImageTitleStyle.h in Headers */,
-				7D546B3522F55B1C00161DC9 /* UIViewController+Dealloc.h in Headers */,
-				7D546B4422F55B1C00161DC9 /* NSString+CXExtension.h in Headers */,
-				7D546B3B22F55B1C00161DC9 /* NSString+CXEncrypt.h in Headers */,
-				7D546B3122F55B1C00161DC9 /* UIButton+CXExpandBtn.h in Headers */,
+				7D546B6722F56B3D00161DC9 /* UIButton+ImageTitleStyle.h in Headers */,
+				7D546B7322F56B3D00161DC9 /* NSString+CXBOOL.h in Headers */,
+				7D546B7522F56B3D00161DC9 /* UISearchBar+textFiled.h in Headers */,
+				7D546B6C22F56B3D00161DC9 /* UIViewController+Dealloc.h in Headers */,
+				7D546B6622F56B3D00161DC9 /* UIImage+CXExtension.h in Headers */,
+				7D546B6D22F56B3D00161DC9 /* NSString+CXExtension.h in Headers */,
+				7D546B7122F56B3D00161DC9 /* NSString+CXDevice.h in Headers */,
+				7D546B6F22F56B3D00161DC9 /* NSString+CXEncrypt.h in Headers */,
+				7D546B7022F56B3D00161DC9 /* CXTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,16 +348,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D546B3922F55B1C00161DC9 /* UIButton+CXExpandBtn.m in Sources */,
+				7D546B7622F56B3D00161DC9 /* NSString+CXEncrypt.m in Sources */,
+				7D546B6522F56B3D00161DC9 /* UIButton+ImageTitleStyle.m in Sources */,
 				03B6AD413496E8B56410DDF495DD90A8 /* CXTool-dummy.m in Sources */,
-				7D546B3E22F55B1C00161DC9 /* UIButton+ImageTitleStyle.m in Sources */,
-				7D546B3422F55B1C00161DC9 /* UISearchBar+textFiled.m in Sources */,
-				7D546B4E22F55B1C00161DC9 /* NSString+CXDevice.m in Sources */,
-				7D546B4D22F55B1C00161DC9 /* UIImage+CXExtension.m in Sources */,
-				7D546B4722F55B1C00161DC9 /* NSString+CXExtension.m in Sources */,
-				7D546B3C22F55B1C00161DC9 /* UIViewController+Dealloc.m in Sources */,
-				7D546B3D22F55B1C00161DC9 /* NSString+CXEncrypt.m in Sources */,
-				7D546B4C22F55B1C00161DC9 /* NSString+CXBOOL.m in Sources */,
+				7D546B7222F56B3D00161DC9 /* NSString+CXExtension.m in Sources */,
+				7D546B6A22F56B3D00161DC9 /* NSString+CXBOOL.m in Sources */,
+				7D546B7422F56B3D00161DC9 /* UIImage+CXExtension.m in Sources */,
+				7D546B6B22F56B3D00161DC9 /* UIViewController+Dealloc.m in Sources */,
+				7D546B6922F56B3D00161DC9 /* UIButton+CXExpandBtn.m in Sources */,
+				7D546B7722F56B3D00161DC9 /* NSString+CXDevice.m in Sources */,
+				7D546B6E22F56B3D00161DC9 /* UISearchBar+textFiled.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
