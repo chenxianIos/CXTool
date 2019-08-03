@@ -200,14 +200,14 @@
 + (NSString *)getThisMonth
 {
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute fromDate:[NSDate date]];
-    return [NSString stringWithFormat:@"%ld-%02ld",[components year],[components month]];
+    return [NSString stringWithFormat:@"%ld-%02ld",(long)[components year],(long)[components month]];
     
 }
 //获取今天时间
 + (NSString *)getToday
 {
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute fromDate:[NSDate date]];
-    return [NSString stringWithFormat:@"%ld-%02ld-%02ld",[components year],[components month],[components day]];
+    return [NSString stringWithFormat:@"%ld-%02ld-%02ld",(long)[components year],(long)[components month],(long)[components day]];
     
 }
 //获取昨天时间
