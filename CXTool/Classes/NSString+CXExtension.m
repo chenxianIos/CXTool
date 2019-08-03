@@ -3,7 +3,7 @@
 #import "NSString+CXExtension.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "sys/utsname.h"
-#import "NSString+BOOL.h"
+#import "NSString+CXBOOL.h"
 
 
 #define HANZI_START 19968
