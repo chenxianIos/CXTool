@@ -68,16 +68,6 @@
 - (BOOL)isCarNumber;
 
 /**
- *  银行卡的有效性
- */
-- (BOOL)bankCardluhmCheck;
-
-/**
- *  IP地址有效性
- */
-- (BOOL)isIPAddress;
-
-/**
  *  Mac地址有效性
  */
 - (BOOL)isMacAddress;

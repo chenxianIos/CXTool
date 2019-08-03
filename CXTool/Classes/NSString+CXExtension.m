@@ -3,7 +3,6 @@
 #import "NSString+CXExtension.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "sys/utsname.h"
-#import "NSString+CXBOOL.h"
 
 
 #define HANZI_START 19968
@@ -592,7 +591,7 @@
 
 - (NSString *)substringAtRange:(NSRange)rang
 {
-    if ([self isEmpty])
+    if (self == nil || [self isEqualToString:@""] || [self isKindOfClass:[NSNull class]])
     {
         return nil;
     }
