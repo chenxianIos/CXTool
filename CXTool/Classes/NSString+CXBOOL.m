@@ -166,16 +166,6 @@
 
 
 
-//固话判断
--(BOOL) isTelphone
-{
-    NSString *phoneRegex = @"\d{3}-\d{8}|\d{4}-\d{7,8}";
-    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
-    return [phoneTest evaluateWithObject:self];
-    
-}
-
-
 #pragma mark - 正则相关
 - (BOOL)isValidateByRegex:(NSString *)regex
 {

@@ -39,8 +39,6 @@
 -(BOOL)isContainsEmoji;
 
 
-//固话判断
--(BOOL)isTelphone;
 /**
  *  手机号码的有效性:分电信、联通、移动和小灵通
  */
