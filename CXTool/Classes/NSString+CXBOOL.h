@@ -58,6 +58,11 @@
  *
  */
 - (BOOL)simpleVerifyIdentityCardNum;
+/**
+ *  复杂一点的身份证有效性
+ *
+ */
+- (BOOL)validateIDCardNumber;
 
 /**
  *  车牌号的有效性

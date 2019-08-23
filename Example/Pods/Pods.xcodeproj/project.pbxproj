@@ -10,6 +10,8 @@
 		03B6AD413496E8B56410DDF495DD90A8 /* CXTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC117FF3EDB9DB4EE998303DF1083EA /* CXTool-dummy.m */; };
 		073601E491B4A986E4BD5B493D92C5B8 /* CXTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CAEE6AC5DDA12523BACEAB63FF3E3C /* CXTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FA8F7C15C0AB3B49A210D0A78F22F89 /* Pods-CXTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3DB79945B228A19E05A9679B3114E6 /* Pods-CXTool_Tests-dummy.m */; };
+		7D164AAB230FD97F0065C5FA /* CXUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D164AA9230FD97F0065C5FA /* CXUtils.h */; };
+		7D164AAC230FD97F0065C5FA /* CXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D164AAA230FD97F0065C5FA /* CXUtils.m */; };
 		7D546BC922F5798800161DC9 /* CXTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546BC822F5798800161DC9 /* CXTool.h */; };
 		7D546BDC22F57B4900161DC9 /* NSString+CXBOOL.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546BCA22F57B4700161DC9 /* NSString+CXBOOL.h */; };
 		7D546BDD22F57B4900161DC9 /* UIButton+ImageTitleStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D546BCB22F57B4700161DC9 /* UIButton+ImageTitleStyle.h */; };
@@ -57,6 +59,8 @@
 		4CC117FF3EDB9DB4EE998303DF1083EA /* CXTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CXTool-dummy.m"; sourceTree = "<group>"; };
 		5C5197794CFA253AA6B9F0D3C08B6C6B /* CXTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CXTool.modulemap; sourceTree = "<group>"; };
 		66EDA39791C81DCD53C8E03644DD350B /* CXTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CXTool-prefix.pch"; sourceTree = "<group>"; };
+		7D164AA9230FD97F0065C5FA /* CXUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXUtils.h; sourceTree = "<group>"; };
+		7D164AAA230FD97F0065C5FA /* CXUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXUtils.m; sourceTree = "<group>"; };
 		7D546BC822F5798800161DC9 /* CXTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CXTool.h; path = CXTool/Classes/CXTool.h; sourceTree = "<group>"; };
 		7D546BCA22F57B4700161DC9 /* NSString+CXBOOL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+CXBOOL.h"; path = "CXTool/Classes/NSString+CXBOOL.h"; sourceTree = "<group>"; };
 		7D546BCB22F57B4700161DC9 /* UIButton+ImageTitleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+ImageTitleStyle.h"; path = "CXTool/Classes/UIButton+ImageTitleStyle.h"; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				1E63120403725CF98342B144563B9AA2 /* Pod */,
 				E634406F0340F59CD89D95ED8368C486 /* Support Files */,
 				7D546BC822F5798800161DC9 /* CXTool.h */,
+				7D164AA9230FD97F0065C5FA /* CXUtils.h */,
+				7D164AAA230FD97F0065C5FA /* CXUtils.m */,
 				7D546BCA22F57B4700161DC9 /* NSString+CXBOOL.h */,
 				7D546BDA22F57B4900161DC9 /* NSString+CXBOOL.m */,
 				7D546BD422F57B4800161DC9 /* NSString+CXDevice.h */,
@@ -248,6 +254,7 @@
 				7D546BE522F57B4900161DC9 /* UIViewController+Dealloc.h in Headers */,
 				7D546BE022F57B4900161DC9 /* NSString+CXEncrypt.h in Headers */,
 				7D546BE222F57B4900161DC9 /* UIButton+CXExpandBtn.h in Headers */,
+				7D164AAB230FD97F0065C5FA /* CXUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D164AAC230FD97F0065C5FA /* CXUtils.m in Sources */,
 				7D546BEB22F57B4900161DC9 /* NSString+CXExtension.m in Sources */,
 				7D546BE122F57B4900161DC9 /* NSString+CXEncrypt.m in Sources */,
 				7D546BDF22F57B4900161DC9 /* NSString+CXDevice.m in Sources */,

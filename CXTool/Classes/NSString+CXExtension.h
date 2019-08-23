@@ -51,10 +51,4 @@ char pinyinFirstLetter(unsigned short hanzi);
 //过滤html标签
 - (NSString *)removeHTML;
 
-//世界时间转换为本地时间
-+ (NSDate *)worldDateToLocalDate:(NSDate *)date;
-
-//压缩图片到指定大小(单位KB)
-+ (NSData *)resetSizeOfImageData:(UIImage *)sourceImage maxSize:(NSInteger)maxSize;
-
 @end

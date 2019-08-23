@@ -18,6 +18,9 @@
 //UIView转UIImage
 + (UIImage*)convertViewToImage:(UIView*)view;
 
+//压缩图片到指定大小(单位KB)
++ (NSData *)resetSizeOfImageData:(UIImage *)sourceImage maxSize:(NSInteger)maxSize;
+
 //** 创建一张实时模糊效果 View (毛玻璃效果) */
 + (UIVisualEffectView *)effectViewWithFrame:(CGRect)frame;
 
