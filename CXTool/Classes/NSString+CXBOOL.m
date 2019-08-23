@@ -318,4 +318,32 @@
 }
 
 
++ (BOOL)getDataJudgeTime:(NSString *)endTime {
+    //获取当前时间
+    NSDate *now = [NSDate date];
+    NSLog(@"now date is: %@", now);
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSUInteger unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
+    NSDateComponents *dateComponent = [calendar components:unitFlags fromDate:now];
+    
+    int hour = (int) [dateComponent hour];
+    int minute = (int) [dateComponent minute];
+    NSInteger sec = minute*60+hour*60*60;
+    
+    int endHour = [[endTime substringToIndex:2] integerValue];
+    int endMinute = [[endTime substringWithRange:NSMakeRange(3, 2)] integerValue];
+    NSInteger endSec = endHour*60*60+endMinute*60;
+    
+    
+    if (sec-endSec>0) {
+        
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
+
+
 @end

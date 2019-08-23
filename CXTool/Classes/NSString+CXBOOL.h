@@ -108,5 +108,7 @@
 //判断字符串是否相同，忽略大小写
 - (BOOL)equalsString:(NSString *)str;
 
+/// 判断当前时间是否大于所传的时间
++ (BOOL)getDataJudgeTime:(NSString *)endTime;
 
 @end
