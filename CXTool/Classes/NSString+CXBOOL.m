@@ -12,9 +12,28 @@
 
 - (BOOL)isEmpty
 {
-    NSMutableString *str = [self mutableCopy];
-    CFStringTrimWhitespace((__bridge CFMutableStringRef)str);
-    return [str isEqualToString:@""];
+    NSString *string = self;
+    if (string == nil)
+    {
+        return YES;
+    }
+    if (string == NULL)
+    {
+        return YES;
+    }
+    if ([string isKindOfClass:[NSNull class]])
+    {
+        return YES;
+    }
+    if ([string isEqualToString:@""])
+    {
+        return YES;
+    }
+    if ([[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0)
+    {
+        return YES;
+    }
+    return NO;
 }
 
 

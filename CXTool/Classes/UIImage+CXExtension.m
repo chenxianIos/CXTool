@@ -73,7 +73,33 @@
     return img;
 }
 
-
+#pragma mark - 添加水印
++ (UIImage *)image:(UIImage *)img addLogo:(UIImage *)logo
+{
+    if (logo == nil ) {
+        return img;
+    }
+    if (img == nil) {
+        return nil;
+    }
+    //get image width and height
+    int w = img.size.width;
+    int h = img.size.height;
+    int logoWidth = logo.size.width;
+    int logoHeight = logo.size.height;
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    //create a graphic context with CGBitmapContextCreate
+    CGContextRef context = CGBitmapContextCreate(NULL, w, h, 8, 44 * w, colorSpace, kCGImageAlphaPremultipliedFirst);
+    CGContextDrawImage(context, CGRectMake(0, 0, w, h), img.CGImage);
+    CGContextDrawImage(context, CGRectMake(w-logoWidth-15, 10, logoWidth, logoHeight), [logo CGImage]);
+    CGImageRef imageMasked = CGBitmapContextCreateImage(context);
+    UIImage *returnImage = [UIImage imageWithCGImage:imageMasked];
+    CGContextRelease(context);
+    CGImageRelease(imageMasked);
+    CGColorSpaceRelease(colorSpace);
+    return returnImage;
+}
 
 +(UIImage*)convertViewToImage:(UIView*)view
 {
@@ -86,7 +112,38 @@
     return image;
 }
 
+#pragma mark - 压缩图片
+// 压缩图片按照大小
++ (UIImage *)image:(UIImage *)image scaleToSize:(CGSize)size
+{
+    CGImageRef imgRef = image.CGImage;
+    CGSize originSize = CGSizeMake(CGImageGetWidth(imgRef), CGImageGetHeight(imgRef)); // 原始大小
+    if (CGSizeEqualToSize(originSize, size)) {
+        return image;
+    }
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);            //[UIScreen mainScreen].scale
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    /**
+     *  设置CGContext集插值质量
+     *  kCGInterpolationHigh 插值质量高
+     */
+    CGContextSetInterpolationQuality(context, kCGInterpolationHigh);
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return scaledImage;
+}
 
+// 压缩图片按照比例
++ (UIImage *)image:(UIImage *)image scaleWithRatio:(CGFloat)ratio
+{
+    CGImageRef imgRef = image.CGImage;
+    if (ratio > 1 || ratio <= 0) {
+        return image;
+    }
+    CGSize size = CGSizeMake(CGImageGetWidth(imgRef) * ratio, CGImageGetHeight(imgRef) * ratio); // 缩放后大小
+    return [self image:image scaleToSize:size];
+}
 #pragma mark - 压缩图片到指定大小(单位KB)
 + (NSData *)resetSizeOfImageData:(UIImage *)sourceImage maxSize:(NSInteger)maxSize {
     //先判断当前质量是否满足要求，不满足再进行压缩

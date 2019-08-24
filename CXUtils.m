@@ -148,4 +148,142 @@
     return YES;
 }
 
+
+#pragma mark - 屏幕截图的几种方式
+
+/**
+ *  屏幕截图有状态栏
+ *
+ *  @param type 图片保存位置
+ *
+ *  @return
+ */
++ (UIImage *)imageWithScreenshotWithCaptureType:(CaptureType)type
+{
+    CGSize imageSize = [UIScreen mainScreen].bounds.size;
+    UIGraphicsBeginImageContextWithOptions(imageSize, YES, 0);
+    
+    for (UIWindow *window in [UIApplication sharedApplication].windows) {
+        if (window.screen == [UIScreen mainScreen]) {
+            [window drawViewHierarchyInRect:[UIScreen mainScreen].bounds afterScreenUpdates:NO];
+        }
+    }
+    UIView *statusBar = [[UIApplication sharedApplication] valueForKey:@"statusBar"];
+    [statusBar drawViewHierarchyInRect:statusBar.bounds afterScreenUpdates:NO];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [self saveImage:image WithCaptureType:type];
+    
+    return image;
+}
+
+
+/**
+ *  屏幕截图没有状态栏
+ *
+ *  @param type 图片保存位置
+ *
+ *  @return
+ */
++ (UIImage *)imageWithScreenshotNoStatusBarWithCaptureType:(CaptureType)type
+{
+    CGSize size = [UIScreen mainScreen].bounds.size;
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    for (UIWindow *window in [UIApplication sharedApplication].windows)
+    {
+        if (window.screen == [UIScreen mainScreen]) {
+            CGContextSaveGState(context);
+            CGContextTranslateCTM(context, window.center.x, window.center.y);
+            CGContextConcatCTM(context, window.transform);
+            CGContextTranslateCTM(context, -window.bounds.size.width *window.layer.anchorPoint.x, -window.bounds.size.height *window.layer.anchorPoint.y);
+            [window.layer renderInContext:context];
+            CGContextRestoreGState(context);
+        }
+        
+    }
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [self saveImage:image WithCaptureType:type];
+    return image;
+    
+}
+
+/**
+ *  给一个view截图
+ *
+ *  @param type 图片保存位置
+ *
+ *  @return
+ */
++ (UIImage *)imageForView:( UIView * _Nonnull )view withCaptureType:(CaptureType)type
+{
+    CGSize size = view.bounds.size;
+    
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [view.layer renderInContext:context];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [self saveImage:image WithCaptureType:type];
+    return image;
+    
+}
+
+/**
+ *  保存image到指定的位置
+ *
+ *  @param image image
+ *  @param type  类型
+ */
++ (void)saveImage:(UIImage *)image WithCaptureType:(CaptureType)type
+{
+    
+    NSData *data = UIImagePNGRepresentation(image);
+    /**
+     *  时间戳
+     */
+    NSString *time =[NSString stringWithFormat:@"%.0f", [[NSDate date] timeIntervalSince1970]];
+    switch (type) {
+        case CaptureTypeSandbox:
+        {
+            [data writeToFile:pathCachesWithFileName([NSString stringWithFormat:@"%@_mainScrren_status.png",time]) atomically:YES];
+        }
+            break;
+        case CaptureTypePhotes:
+        {
+            [data writeToFile:pathCachesWithFileName([NSString stringWithFormat:@"%@_mainScrren_status.png",time]) atomically:YES];
+            
+        }
+            break;
+        case CaptureTypeBoth:
+        {
+            [data writeToFile:pathCachesWithFileName([NSString stringWithFormat:@"%@_mainScrren_status.png",time]) atomically:YES];
+            [data writeToFile:pathCachesWithFileName([NSString stringWithFormat:@"%@_mainScrren_status.png",time]) atomically:YES];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+// 指定回调方法
++ (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    NSString *msg = nil ;
+#ifdef DEBUG
+    if(error != NULL)
+    {
+        msg = @"保存图片失败" ;
+    } else {
+        msg = @"保存图片成功" ;
+    }
+#endif
+}
+
+
 @end

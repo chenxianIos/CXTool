@@ -10,6 +10,7 @@
 #ifndef CXTool_h
 #define CXTool_h
 
+#import "CXUtils.h"
 #import "NSString+CXBOOL.h"
 #import "NSString+CXExtension.h"
 #import "NSString+CXDevice.h"
@@ -19,5 +20,7 @@
 #import "UIImage+CXExtension.h"
 #import "UISearchBar+textFiled.h"
 #import "UIViewController+Dealloc.h"
+
+
 
 #endif /* CXTool_h */

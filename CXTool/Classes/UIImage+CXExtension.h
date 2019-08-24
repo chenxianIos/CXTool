@@ -15,8 +15,17 @@
 /** 根据颜色生产图片 */
 + (UIImage *)imageWithColor:(UIColor *)aColor;
 
+/** 添加水印 */
++ (UIImage *)image:(UIImage *)img addLogo:(UIImage *)logo
+
 //UIView转UIImage
 + (UIImage*)convertViewToImage:(UIView*)view;
+
+// 压缩图片按照大小
++ (UIImage *)image:(UIImage *)image scaleToSize:(CGSize)size;
+
+// 压缩图片按照比例
++ (UIImage *)image:(UIImage *)image scaleWithRatio:(CGFloat)ratio;
 
 //压缩图片到指定大小(单位KB)
 + (NSData *)resetSizeOfImageData:(UIImage *)sourceImage maxSize:(NSInteger)maxSize;

@@ -54,9 +54,35 @@
 //** 磁盘总空间大小 */
 + (CGFloat)diskOfAllSizeMBytes;
 
+//过滤特殊字符串
++ (NSString *)filterSpecialString:(NSString *)string;
 
+/**
+ *  从身份证获取生日,身份证格式不正确返回nil,正确返回:1990年01月01日
+ *
+ *  @param number 身份证
+ *
+ *  @return
+ */
++ (NSString *)getBirthdayFromIdentityNumber:(NSString *)number;
 
+/**
+ *  从身份证里面获取性别man 或者 woman 不正确的身份证返回nil
+ *
+ *  @param number 身份证
+ *
+ *  @return
+ */
++ (NSString *)getGenderFromIdentityNumber:(NSString *)number;
 
+/**
+ *  判断身份证是否合法
+ *
+ *  @param number 身份证号码
+ *
+ *  @return
+ */
++ (BOOL)checkIdentityNumber:(NSString *)number;
 
 
 @end
