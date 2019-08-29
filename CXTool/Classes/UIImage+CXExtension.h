@@ -16,7 +16,7 @@
 + (UIImage *)imageWithColor:(UIColor *)aColor;
 
 /** 添加水印 */
-+ (UIImage *)image:(UIImage *)img addLogo:(UIImage *)logo
++ (UIImage *)image:(UIImage *)img addLogo:(UIImage *)logo;
 
 //UIView转UIImage
 + (UIImage*)convertViewToImage:(UIView*)view;
