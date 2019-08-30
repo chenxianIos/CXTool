@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10E341F1598DFC34EF32BEC17418EBAF /* NSString+CXEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA253ED05F1F172C6BC344575EDA006 /* NSString+CXEncrypt.m */; };
+		1402CBA6AEE4016BF02D2EFAF4D55F19 /* CXUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19FFBD4E291047AC824B6B5FE641FAF4 /* CXUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BD94D04B0C8E4D3412FD8608281CF08 /* Pods-CXTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2E7AF35E7AB6A6CDEEAA5D67B0F8C9 /* Pods-CXTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2536BBA36350C1CC5A4DE505CC37BC5E /* UIViewController+Dealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = C8DC8915FA0973246C62F9E55AD51392 /* UIViewController+Dealloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25BF7BC548B0F05EC7DF294746382BC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2F8E2F2861A0661EBB29102662E5DC5C /* UIImage+CXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 435049E51D5E17C2D475D4DA198C5D84 /* UIImage+CXExtension.m */; };
+		372018D96BC61439E32367B9E24F3DE4 /* UIButton+ImageTitleStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 880ADF18301A3895111CCF8D06E9A3E4 /* UIButton+ImageTitleStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E3FC75244B271A89DC78749DBE73090 /* CXTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9976A91449259A575E66FC50C85F63 /* CXTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		567253AFBADB604116DC50B16EAB2F4B /* UIButton+ImageTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B6BF0680B1C63A75F9B5757F1DF65A /* UIButton+ImageTitleStyle.m */; };
+		589E5016544C3D18CAFFF6627FB56007 /* UISearchBar+textFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 591CEF70CAD34B9F6865C50F65D771CF /* UISearchBar+textFiled.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68306EF8CE1C94D158A9B8FF148137A9 /* UIImage+CXExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE27C039ECB6296D256A4B0732C2001 /* UIImage+CXExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FAF999173911133D486E52DC1921A82 /* CXTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4550781D43A3E11010C2CC47720E3E59 /* CXTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7084DA37D1C86F2B972E3C6C66914627 /* UIViewController+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE163A74C25F317097AE6F9A49C37F4 /* UIViewController+Dealloc.m */; };
+		74C95BBEA3D6B3467B89E2FFB70A59D7 /* CXTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0796A11A33E33E9CD441D2B7F50D4A85 /* CXTool-dummy.m */; };
+		83584567EF41C0B653D4F3E95661BF6A /* Pods-CXTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8AA1C8B4947EB68E150DB56D60763 /* Pods-CXTool_Example-dummy.m */; };
+		8DB2D759B1CEB345F438EF4A0C6ADF66 /* UISearchBar+textFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8297C698D483211364DB7A4F6A07A535 /* UISearchBar+textFiled.m */; };
+		98A44E91594B2D95C02024DA6F500909 /* NSString+CXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CA512F82B611D46065260FFAE90A82 /* NSString+CXExtension.m */; };
+		AD7A7B33E526BF542B7CBF6954151BCB /* CXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 740945F5A2A31984D92B02B29E7BE0C0 /* CXUtils.m */; };
+		AEB35CE62F7A6D67E170F5CBA45A1F6A /* NSString+CXEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E754B33EB613D52495BA87E5E8D7F74 /* NSString+CXEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0E5D0AA98EC7D78F394D16EFCD7015B /* NSString+CXBOOL.h in Headers */ = {isa = PBXBuildFile; fileRef = FCEA813F8BCB304D5F7A0450E8F1588B /* NSString+CXBOOL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D119607F7914EBD70D54CD0E00A6AD72 /* NSString+CXExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC82B1AF2A525260F0C31068399B727 /* NSString+CXExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D396BA70AFDA9D7CD459AEE057B3B5C4 /* UIButton+CXExpandBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB3DCF67FA9359155212C157937B03 /* UIButton+CXExpandBtn.m */; };
+		DA691DD33DC7415EB488E01BE1E618FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E0E00451C9A1F95A029C9EFBDEF9D61A /* NSString+CXDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 649A10146CF29859FA3148C2DC3A4EA3 /* NSString+CXDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F53F4143F51C78584A3E51FEB929AA6E /* NSString+CXDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A8586B1FF0E1BD633A16906998FBFE1A /* NSString+CXDevice.m */; };
+		F7652684A638DF11DFEBCD71AEB7BAD4 /* NSString+CXBOOL.m in Sources */ = {isa = PBXBuildFile; fileRef = 563C479D80487AC85D595A14A79A77E1 /* NSString+CXBOOL.m */; };
+		FEDACF12B2FCEF7B246456E125A4797B /* UIButton+CXExpandBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = E83FA770081CD2F0592F3FD7030FA2A9 /* UIButton+CXExpandBtn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6676B4552D2B892E353DF99D632F0933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F426737731D6B43FE963AA38F8CFAFA7;
+			remoteInfo = CXTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0796A11A33E33E9CD441D2B7F50D4A85 /* CXTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CXTool-dummy.m"; sourceTree = "<group>"; };
+		0EE27C039ECB6296D256A4B0732C2001 /* UIImage+CXExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CXExtension.h"; path = "CXTool/Classes/UIImage+CXExtension.h"; sourceTree = "<group>"; };
+		1581BE38DB6D55D7D5914AD788FB1DDB /* CXTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CXTool.modulemap; sourceTree = "<group>"; };
+		19FFBD4E291047AC824B6B5FE641FAF4 /* CXUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXUtils.h; path = CXTool/Classes/CXUtils.h; sourceTree = "<group>"; };
+		1AE163A74C25F317097AE6F9A49C37F4 /* UIViewController+Dealloc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Dealloc.m"; path = "CXTool/Classes/UIViewController+Dealloc.m"; sourceTree = "<group>"; };
+		1E754B33EB613D52495BA87E5E8D7F74 /* NSString+CXEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CXEncrypt.h"; path = "CXTool/Classes/NSString+CXEncrypt.h"; sourceTree = "<group>"; };
+		2259462E0A911DDA4E8599606461EC9E /* CXTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CXTool.framework; path = CXTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3C79EDEDDC1170A7C13EB8072603E1FD /* Pods-CXTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CXTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		42DB3DCF67FA9359155212C157937B03 /* UIButton+CXExpandBtn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+CXExpandBtn.m"; path = "CXTool/Classes/UIButton+CXExpandBtn.m"; sourceTree = "<group>"; };
+		435049E51D5E17C2D475D4DA198C5D84 /* UIImage+CXExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CXExtension.m"; path = "CXTool/Classes/UIImage+CXExtension.m"; sourceTree = "<group>"; };
+		4550781D43A3E11010C2CC47720E3E59 /* CXTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CXTool-umbrella.h"; sourceTree = "<group>"; };
+		47509B04C5AF7B79B4BE64FF975A8E2D /* CXTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CXTool.xcconfig; sourceTree = "<group>"; };
+		4AEADD717F581208FE75C38D59F33A0B /* CXTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CXTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4AFBE73BE7415A734CE5F868DB0434D7 /* Pods-CXTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CXTool_Example.modulemap"; sourceTree = "<group>"; };
+		4B0F1DF6333AE429B0581C4670B29551 /* Pods-CXTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CXTool_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4F76364395DA4E658AD2150620B30730 /* Pods_CXTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CXTool_Example.framework; path = "Pods-CXTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		563C479D80487AC85D595A14A79A77E1 /* NSString+CXBOOL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXBOOL.m"; path = "CXTool/Classes/NSString+CXBOOL.m"; sourceTree = "<group>"; };
+		591CEF70CAD34B9F6865C50F65D771CF /* UISearchBar+textFiled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISearchBar+textFiled.h"; path = "CXTool/Classes/UISearchBar+textFiled.h"; sourceTree = "<group>"; };
+		5D9976A91449259A575E66FC50C85F63 /* CXTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXTool.h; path = CXTool/Classes/CXTool.h; sourceTree = "<group>"; };
+		649A10146CF29859FA3148C2DC3A4EA3 /* NSString+CXDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CXDevice.h"; path = "CXTool/Classes/NSString+CXDevice.h"; sourceTree = "<group>"; };
+		740945F5A2A31984D92B02B29E7BE0C0 /* CXUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXUtils.m; path = CXTool/Classes/CXUtils.m; sourceTree = "<group>"; };
+		7B8E198C4B07FDA4DF0DFED4A4BD4CCE /* CXTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CXTool-Info.plist"; sourceTree = "<group>"; };
+		8297C698D483211364DB7A4F6A07A535 /* UISearchBar+textFiled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISearchBar+textFiled.m"; path = "CXTool/Classes/UISearchBar+textFiled.m"; sourceTree = "<group>"; };
+		880ADF18301A3895111CCF8D06E9A3E4 /* UIButton+ImageTitleStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+ImageTitleStyle.h"; path = "CXTool/Classes/UIButton+ImageTitleStyle.h"; sourceTree = "<group>"; };
+		9C2E7AF35E7AB6A6CDEEAA5D67B0F8C9 /* Pods-CXTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CXTool_Example-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0E9E9715EC1C44CC010171DE21318C2 /* CXTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CXTool-prefix.pch"; sourceTree = "<group>"; };
+		A851ED96425D57A6915294D92B088BA4 /* Pods-CXTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CXTool_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A8586B1FF0E1BD633A16906998FBFE1A /* NSString+CXDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXDevice.m"; path = "CXTool/Classes/NSString+CXDevice.m"; sourceTree = "<group>"; };
+		ACA253ED05F1F172C6BC344575EDA006 /* NSString+CXEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXEncrypt.m"; path = "CXTool/Classes/NSString+CXEncrypt.m"; sourceTree = "<group>"; };
+		B8133AC830970418BD4B82BF6A2E5050 /* Pods-CXTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CXTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BCF8AA1C8B4947EB68E150DB56D60763 /* Pods-CXTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CXTool_Example-dummy.m"; sourceTree = "<group>"; };
+		C4E242A23AACA856ACFD870858DBF7BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C8DC8915FA0973246C62F9E55AD51392 /* UIViewController+Dealloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Dealloc.h"; path = "CXTool/Classes/UIViewController+Dealloc.h"; sourceTree = "<group>"; };
+		CFE0DDC97DF0D6F480A25E266253473B /* Pods-CXTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CXTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7F6FA6C6D2CF6AE89476F2CB90CA871 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E3CA512F82B611D46065260FFAE90A82 /* NSString+CXExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXExtension.m"; path = "CXTool/Classes/NSString+CXExtension.m"; sourceTree = "<group>"; };
+		E83FA770081CD2F0592F3FD7030FA2A9 /* UIButton+CXExpandBtn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+CXExpandBtn.h"; path = "CXTool/Classes/UIButton+CXExpandBtn.h"; sourceTree = "<group>"; };
+		F2B6BF0680B1C63A75F9B5757F1DF65A /* UIButton+ImageTitleStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ImageTitleStyle.m"; path = "CXTool/Classes/UIButton+ImageTitleStyle.m"; sourceTree = "<group>"; };
+		F30B226241B077CFA4A27D78E2769EDC /* Pods-CXTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CXTool_Example-Info.plist"; sourceTree = "<group>"; };
+		FCEA813F8BCB304D5F7A0450E8F1588B /* NSString+CXBOOL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CXBOOL.h"; path = "CXTool/Classes/NSString+CXBOOL.h"; sourceTree = "<group>"; };
+		FEC82B1AF2A525260F0C31068399B727 /* NSString+CXExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CXExtension.h"; path = "CXTool/Classes/NSString+CXExtension.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E38C3881159CBBA0393FC51B5C13A3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA691DD33DC7415EB488E01BE1E618FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BA8DEDCAFF911776A5D5BC17B2A67D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25BF7BC548B0F05EC7DF294746382BC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41F87512044C3878ABDAD0241FD033DD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				611A95249CB33A192AC3A0A301387548 /* Pods-CXTool_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4DACA1171B93535751CA4E67148B37EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2259462E0A911DDA4E8599606461EC9E /* CXTool.framework */,
+				4F76364395DA4E658AD2150620B30730 /* Pods_CXTool_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		611A95249CB33A192AC3A0A301387548 /* Pods-CXTool_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4AFBE73BE7415A734CE5F868DB0434D7 /* Pods-CXTool_Example.modulemap */,
+				CFE0DDC97DF0D6F480A25E266253473B /* Pods-CXTool_Example-acknowledgements.markdown */,
+				B8133AC830970418BD4B82BF6A2E5050 /* Pods-CXTool_Example-acknowledgements.plist */,
+				BCF8AA1C8B4947EB68E150DB56D60763 /* Pods-CXTool_Example-dummy.m */,
+				A851ED96425D57A6915294D92B088BA4 /* Pods-CXTool_Example-frameworks.sh */,
+				F30B226241B077CFA4A27D78E2769EDC /* Pods-CXTool_Example-Info.plist */,
+				9C2E7AF35E7AB6A6CDEEAA5D67B0F8C9 /* Pods-CXTool_Example-umbrella.h */,
+				3C79EDEDDC1170A7C13EB8072603E1FD /* Pods-CXTool_Example.debug.xcconfig */,
+				4B0F1DF6333AE429B0581C4670B29551 /* Pods-CXTool_Example.release.xcconfig */,
+			);
+			name = "Pods-CXTool_Example";
+			path = "Target Support Files/Pods-CXTool_Example";
+			sourceTree = "<group>";
+		};
+		79C0344AA0E31FF86C86A71F2A9FA4DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1581BE38DB6D55D7D5914AD788FB1DDB /* CXTool.modulemap */,
+				47509B04C5AF7B79B4BE64FF975A8E2D /* CXTool.xcconfig */,
+				0796A11A33E33E9CD441D2B7F50D4A85 /* CXTool-dummy.m */,
+				7B8E198C4B07FDA4DF0DFED4A4BD4CCE /* CXTool-Info.plist */,
+				A0E9E9715EC1C44CC010171DE21318C2 /* CXTool-prefix.pch */,
+				4550781D43A3E11010C2CC47720E3E59 /* CXTool-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CXTool";
+			sourceTree = "<group>";
+		};
+		7B42646A59B308AFFE247740CA2D7E1E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4AEADD717F581208FE75C38D59F33A0B /* CXTool.podspec */,
+				C4E242A23AACA856ACFD870858DBF7BC /* LICENSE */,
+				D7F6FA6C6D2CF6AE89476F2CB90CA871 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A3B0B0ADCBC3265E5AA4B8D471D475FB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE7E70E2E61B036A124A330DEDAC709E /* CXTool */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A3B0B0ADCBC3265E5AA4B8D471D475FB /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4DACA1171B93535751CA4E67148B37EA /* Products */,
+				41F87512044C3878ABDAD0241FD033DD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE7E70E2E61B036A124A330DEDAC709E /* CXTool */ = {
+			isa = PBXGroup;
+			children = (
+				5D9976A91449259A575E66FC50C85F63 /* CXTool.h */,
+				19FFBD4E291047AC824B6B5FE641FAF4 /* CXUtils.h */,
+				740945F5A2A31984D92B02B29E7BE0C0 /* CXUtils.m */,
+				FCEA813F8BCB304D5F7A0450E8F1588B /* NSString+CXBOOL.h */,
+				563C479D80487AC85D595A14A79A77E1 /* NSString+CXBOOL.m */,
+				649A10146CF29859FA3148C2DC3A4EA3 /* NSString+CXDevice.h */,
+				A8586B1FF0E1BD633A16906998FBFE1A /* NSString+CXDevice.m */,
+				1E754B33EB613D52495BA87E5E8D7F74 /* NSString+CXEncrypt.h */,
+				ACA253ED05F1F172C6BC344575EDA006 /* NSString+CXEncrypt.m */,
+				FEC82B1AF2A525260F0C31068399B727 /* NSString+CXExtension.h */,
+				E3CA512F82B611D46065260FFAE90A82 /* NSString+CXExtension.m */,
+				E83FA770081CD2F0592F3FD7030FA2A9 /* UIButton+CXExpandBtn.h */,
+				42DB3DCF67FA9359155212C157937B03 /* UIButton+CXExpandBtn.m */,
+				880ADF18301A3895111CCF8D06E9A3E4 /* UIButton+ImageTitleStyle.h */,
+				F2B6BF0680B1C63A75F9B5757F1DF65A /* UIButton+ImageTitleStyle.m */,
+				0EE27C039ECB6296D256A4B0732C2001 /* UIImage+CXExtension.h */,
+				435049E51D5E17C2D475D4DA198C5D84 /* UIImage+CXExtension.m */,
+				591CEF70CAD34B9F6865C50F65D771CF /* UISearchBar+textFiled.h */,
+				8297C698D483211364DB7A4F6A07A535 /* UISearchBar+textFiled.m */,
+				C8DC8915FA0973246C62F9E55AD51392 /* UIViewController+Dealloc.h */,
+				1AE163A74C25F317097AE6F9A49C37F4 /* UIViewController+Dealloc.m */,
+				7B42646A59B308AFFE247740CA2D7E1E /* Pod */,
+				79C0344AA0E31FF86C86A71F2A9FA4DE /* Support Files */,
+			);
+			name = CXTool;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EEB6D6B68739F640459883ACAA65811F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FAF999173911133D486E52DC1921A82 /* CXTool-umbrella.h in Headers */,
+				4E3FC75244B271A89DC78749DBE73090 /* CXTool.h in Headers */,
+				1402CBA6AEE4016BF02D2EFAF4D55F19 /* CXUtils.h in Headers */,
+				D0E5D0AA98EC7D78F394D16EFCD7015B /* NSString+CXBOOL.h in Headers */,
+				E0E00451C9A1F95A029C9EFBDEF9D61A /* NSString+CXDevice.h in Headers */,
+				AEB35CE62F7A6D67E170F5CBA45A1F6A /* NSString+CXEncrypt.h in Headers */,
+				D119607F7914EBD70D54CD0E00A6AD72 /* NSString+CXExtension.h in Headers */,
+				FEDACF12B2FCEF7B246456E125A4797B /* UIButton+CXExpandBtn.h in Headers */,
+				372018D96BC61439E32367B9E24F3DE4 /* UIButton+ImageTitleStyle.h in Headers */,
+				68306EF8CE1C94D158A9B8FF148137A9 /* UIImage+CXExtension.h in Headers */,
+				589E5016544C3D18CAFFF6627FB56007 /* UISearchBar+textFiled.h in Headers */,
+				2536BBA36350C1CC5A4DE505CC37BC5E /* UIViewController+Dealloc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4C0C4FE378B38246D0A09DB24AC5E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD94D04B0C8E4D3412FD8608281CF08 /* Pods-CXTool_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1AFED16EA4CE6AAB0376A1064C271829 /* Pods-CXTool_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE2FD50DBE57029F637570BA21ADA14 /* Build configuration list for PBXNativeTarget "Pods-CXTool_Example" */;
+			buildPhases = (
+				FF4C0C4FE378B38246D0A09DB24AC5E3 /* Headers */,
+				2B386C30169131FC9884403E23F3C1EB /* Sources */,
+				F9BA8DEDCAFF911776A5D5BC17B2A67D /* Frameworks */,
+				4CE97F6058BD1C8591F37EE374ED5BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C52E31436E7632E992EB87F3D577539 /* PBXTargetDependency */,
+			);
+			name = "Pods-CXTool_Example";
+			productName = "Pods-CXTool_Example";
+			productReference = 4F76364395DA4E658AD2150620B30730 /* Pods_CXTool_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F426737731D6B43FE963AA38F8CFAFA7 /* CXTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784222B98FED042477262AAE55AD326B /* Build configuration list for PBXNativeTarget "CXTool" */;
+			buildPhases = (
+				EEB6D6B68739F640459883ACAA65811F /* Headers */,
+				F1DF6B904B2189C887CFA09C576ED889 /* Sources */,
+				E38C3881159CBBA0393FC51B5C13A3CD /* Frameworks */,
+				AF928CB13BA552DB47BB148204072C78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CXTool;
+			productName = CXTool;
+			productReference = 2259462E0A911DDA4E8599606461EC9E /* CXTool.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4DACA1171B93535751CA4E67148B37EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F426737731D6B43FE963AA38F8CFAFA7 /* CXTool */,
+				1AFED16EA4CE6AAB0376A1064C271829 /* Pods-CXTool_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CE97F6058BD1C8591F37EE374ED5BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF928CB13BA552DB47BB148204072C78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B386C30169131FC9884403E23F3C1EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83584567EF41C0B653D4F3E95661BF6A /* Pods-CXTool_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1DF6B904B2189C887CFA09C576ED889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C95BBEA3D6B3467B89E2FFB70A59D7 /* CXTool-dummy.m in Sources */,
+				AD7A7B33E526BF542B7CBF6954151BCB /* CXUtils.m in Sources */,
+				F7652684A638DF11DFEBCD71AEB7BAD4 /* NSString+CXBOOL.m in Sources */,
+				F53F4143F51C78584A3E51FEB929AA6E /* NSString+CXDevice.m in Sources */,
+				10E341F1598DFC34EF32BEC17418EBAF /* NSString+CXEncrypt.m in Sources */,
+				98A44E91594B2D95C02024DA6F500909 /* NSString+CXExtension.m in Sources */,
+				D396BA70AFDA9D7CD459AEE057B3B5C4 /* UIButton+CXExpandBtn.m in Sources */,
+				567253AFBADB604116DC50B16EAB2F4B /* UIButton+ImageTitleStyle.m in Sources */,
+				2F8E2F2861A0661EBB29102662E5DC5C /* UIImage+CXExtension.m in Sources */,
+				8DB2D759B1CEB345F438EF4A0C6ADF66 /* UISearchBar+textFiled.m in Sources */,
+				7084DA37D1C86F2B972E3C6C66914627 /* UIViewController+Dealloc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C52E31436E7632E992EB87F3D577539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CXTool;
+			target = F426737731D6B43FE963AA38F8CFAFA7 /* CXTool */;
+			targetProxy = 6676B4552D2B892E353DF99D632F0933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C76A4C56DFB117C62534597DF670582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47509B04C5AF7B79B4BE64FF975A8E2D /* CXTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CXTool/CXTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CXTool/CXTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CXTool/CXTool.modulemap";
+				PRODUCT_MODULE_NAME = CXTool;
+				PRODUCT_NAME = CXTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BEB5481CC8FDE9ADFEEDFA8D93D52739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47509B04C5AF7B79B4BE64FF975A8E2D /* CXTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CXTool/CXTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CXTool/CXTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CXTool/CXTool.modulemap";
+				PRODUCT_MODULE_NAME = CXTool;
+				PRODUCT_NAME = CXTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9EC6A2EB1A5889FE493D8D16A6BFF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C79EDEDDC1170A7C13EB8072603E1FD /* Pods-CXTool_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CXTool_Example/Pods-CXTool_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CXTool_Example/Pods-CXTool_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDA65262B9804E1DD7E438A1016E7B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0F1DF6333AE429B0581C4670B29551 /* Pods-CXTool_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CXTool_Example/Pods-CXTool_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CXTool_Example/Pods-CXTool_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784222B98FED042477262AAE55AD326B /* Build configuration list for PBXNativeTarget "CXTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C76A4C56DFB117C62534597DF670582 /* Debug */,
+				BEB5481CC8FDE9ADFEEDFA8D93D52739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE2FD50DBE57029F637570BA21ADA14 /* Build configuration list for PBXNativeTarget "Pods-CXTool_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9EC6A2EB1A5889FE493D8D16A6BFF88 /* Debug */,
+				CDA65262B9804E1DD7E438A1016E7B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - CXTool (0.1.0)
+
+DEPENDENCIES:
+  - CXTool (from `../`)
+
+EXTERNAL SOURCES:
+  CXTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CXTool: 101f6e92ebdb9baae69096cbf83c7757da6e8b20
+
+PODFILE CHECKSUM: df73416920b9f845dfa9d67b13e77cced7c75ad0
+
+COCOAPODS: 1.7.5

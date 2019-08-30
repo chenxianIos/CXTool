@@ -1,0 +1,6 @@
+framework module CXTool {
+  umbrella header "CXTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

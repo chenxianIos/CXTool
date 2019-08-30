@@ -5,9 +5,5 @@ platform :ios, '8.0'
 target 'CXTool_Example' do
   pod 'CXTool', :path => '../'
 
-  target 'CXTool_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
-  end
+  
 end
