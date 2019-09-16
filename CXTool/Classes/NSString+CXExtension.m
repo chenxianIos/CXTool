@@ -14,54 +14,6 @@
 
 
 
-#pragma mark emotion_monkey
-+ (NSDictionary *)emotion_monkey_dict {
-    static NSDictionary *_emotion_monkey_dict;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _emotion_monkey_dict = @{@"coding_emoji_01": @"哈哈",
-                                 @"coding_emoji_02": @"吐",
-                                 @"coding_emoji_03": @"压力山大",
-                                 @"coding_emoji_04": @"忧伤",
-                                 @"coding_emoji_05": @"坏人",
-                                 @"coding_emoji_06": @"酷",
-                                 @"coding_emoji_07": @"哼",
-                                 @"coding_emoji_08": @"你咬我啊",
-                                 @"coding_emoji_09": @"内急",
-                                 @"coding_emoji_10": @"32个赞",
-                                 @"coding_emoji_11": @"加油",
-                                 @"coding_emoji_12": @"闭嘴",
-                                 @"coding_emoji_13": @"wow",
-                                 @"coding_emoji_14": @"泪流成河",
-                                 @"coding_emoji_15": @"NO!",
-                                 @"coding_emoji_16": @"疑问",
-                                 @"coding_emoji_17": @"耶",
-                                 @"coding_emoji_18": @"生日快乐",
-                                 @"coding_emoji_19": @"求包养",
-                                 @"coding_emoji_20": @"吹泡泡",
-                                 @"coding_emoji_21": @"睡觉",
-                                 @"coding_emoji_22": @"惊讶",
-                                 @"coding_emoji_23": @"Hi",
-                                 @"coding_emoji_24": @"打发点咯",
-                                 @"coding_emoji_25": @"呵呵",
-                                 @"coding_emoji_26": @"喷血",
-                                 @"coding_emoji_27": @"Bug",
-                                 @"coding_emoji_28": @"听音乐",
-                                 @"coding_emoji_29": @"垒码",
-                                 @"coding_emoji_30": @"我打你哦",
-                                 @"coding_emoji_31": @"顶足球",
-                                 @"coding_emoji_32": @"放毒气",
-                                 @"coding_emoji_33": @"表白",
-                                 @"coding_emoji_34": @"抓瓢虫",
-                                 @"coding_emoji_35": @"下班",
-                                 @"coding_emoji_36": @"冒泡"};
-    });
-    return _emotion_monkey_dict;
-}
-- (NSString *)emotionMonkeyName{
-    return [NSString emotion_monkey_dict][self];
-}
-
 + (NSString *)sizeDisplayWithByte:(CGFloat)sizeOfByte{
     NSString *sizeDisplayStr;
     if (sizeOfByte < 1024) {
@@ -370,7 +322,6 @@
 {
     NSInteger aa = 0;
     NSDateFormatter *dateformater = [[NSDateFormatter alloc] init];
-//    [dateformater setDateFormat:@"yyyyy年MM月dd日"];
        [dateformater setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
 
     NSDate *dta = [[NSDate alloc] init];
@@ -653,6 +604,67 @@
     return result;
 }
 
+
++(NSString*)returnTimeType:(NSString*)time
+{
+    
+    //把字符串转为NSdate
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    NSDate *timeDate = [dateFormatter dateFromString:time];
+    
+    NSDate *currentDate = [NSDate date];
+    
+    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:timeDate];
+    
+    long temp = 0;
+    
+    NSString *result;
+    
+    if (timeInterval/60 < 1) {
+        
+        result = [NSString stringWithFormat:@"刚刚"];
+        
+    }
+    
+    else if((temp = timeInterval/60) <60){
+        
+        result = [NSString stringWithFormat:@"%ld分钟前",temp];
+        
+    }
+    
+    else if((temp = temp/60) <24){
+        
+        result = [NSString stringWithFormat:@"%ld小时前",temp];
+        
+    }
+    
+    else if((temp = temp/24) <30){
+        
+        result = [NSString stringWithFormat:@"%ld天前",temp];
+        
+    }
+    
+    else if((temp = temp/30) <12){
+        
+        result = [NSString stringWithFormat:@"%ld月前",temp];
+        
+    }
+    
+    else{
+        
+        temp = temp/12;
+        
+        result = [NSString stringWithFormat:@"%ld年前",temp];
+        
+    }
+    
+    return result;
+    
+}
 
 
 @end

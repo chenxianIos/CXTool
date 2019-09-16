@@ -30,6 +30,8 @@ char pinyinFirstLetter(unsigned short hanzi);
 
 //日期和时间计算
 +(NSString *)formateDate:(NSString *)dateString withFormate:(NSString *) formate;
+//显示 刚刚，几分钟前，几小时前，昨天，前天
++(NSString*)returnTimeType:(NSString*)time;
 
 //比较两个日期的大小  日期格式为@"yyyy-MM-dd HH:mm:ss"
 + (NSInteger)compareDate:(NSString*)aDate withDate:(NSString*)bDate;
@@ -50,5 +52,7 @@ char pinyinFirstLetter(unsigned short hanzi);
 
 //过滤html标签
 - (NSString *)removeHTML;
+
+
 
 @end

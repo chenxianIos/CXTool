@@ -138,10 +138,12 @@ View.layer.mask = maskLayer;
 // --判断 iOS 8 或更高的系统版本
 #define kVERSION_8_OR_LATER (([[[UIDevice currentDevice] systemVersion] floatValue] >=8.0)? (YES):(NO))
 
+// --APP名称
+#define kAppName [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 // --APP版本号
 #define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-// --系统版本号
-#define kSystemVersion [[UIDevice currentDevice] systemVersion]
+// --APP build版本
+#define kAppBundleVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]\
 // --获取当前语言
 #define kCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 
