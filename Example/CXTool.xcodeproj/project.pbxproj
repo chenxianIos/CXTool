@@ -61,7 +61,7 @@
 		87C6A0825F749C885E048455 /* Pods_CXTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A9A4539CA3E291D0B90F77 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A83D4BE47B8BE99F30D1971E /* Pods-CXTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXTool_Example.release.xcconfig"; path = "Target Support Files/Pods-CXTool_Example/Pods-CXTool_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DC1CE6CF6A130CF084C99375 /* CXTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CXTool.podspec; path = ../CXTool.podspec; sourceTree = "<group>"; };
+		DC1CE6CF6A130CF084C99375 /* CXTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CXTool.podspec; path = ../CXTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DFB728F1737D56DD8CA223E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
