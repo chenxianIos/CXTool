@@ -16,6 +16,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 CXTool is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+source 'https://github.com/chenxianIos/Specs.git' 
+source 'https://github.com/CocoaPods/Specs.git'
+
 ```ruby
 pod 'CXTool'
 ```
