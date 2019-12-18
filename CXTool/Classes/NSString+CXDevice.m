@@ -8,7 +8,7 @@
 
 #import "NSString+CXDevice.h"
 #import <sys/utsname.h>
-
+#import "NSString+CXExtension.h"
 #import <arpa/inet.h>
 #import <ifaddrs.h>
 
@@ -295,7 +295,7 @@
         //（3）如果余数为0，校验位应为1，余数为1到10校验位应为字符串“0X98765432”(不包括分号)的第余数位的值（比如余数等于3，校验位应为9）
         //6. 出生年份的前两位必须是19或20
         number = [number stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        number = [self filterSpecialString:number];
+        number = [number removeSpecialString];
         //1⃣️判断位数
         if (number.length != 15 && number.length != 18) {
             return NO;
@@ -359,7 +359,7 @@
 + (NSInteger)getGenderFromIdentityNumber:(NSString *)number
 {
     if ([self checkIdentityNumber:number]) {
-        number = [self filterSpecialString:number];
+        number = [number removeSpecialString];
         NSInteger i = [[number substringWithRange:NSMakeRange(number.length - 2, 1)] integerValue];
         if (i % 2 == 1) {
             return 1;
@@ -380,7 +380,7 @@
 + (NSString *)getBirthdayFromIdentityNumber:(NSString *)number
 {
     if ([self checkIdentityNumber:number]) {
-        number = [self filterSpecialString:number];
+        number = [number removeSpecialString];
         if (number.length == 18) {
             return [NSString stringWithFormat:@"%@年%@月%@日",[number substringWithRange:NSMakeRange(6,4)], [number substringWithRange:NSMakeRange(10,2)], [number substringWithRange:NSMakeRange(12,2)]];
         }
