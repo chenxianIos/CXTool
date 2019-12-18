@@ -218,11 +218,11 @@
     return [[UIDevice currentDevice] name];
 }
 
-+ (NSString *)deviceName{
++ (NSString *)systemName{
     return [[UIDevice currentDevice] systemName];
 }
 
-+ (NSString *)phoneVersion{
++ (NSString *)systemVersion{
     return [[UIDevice currentDevice] systemVersion];
 }
 
@@ -356,18 +356,18 @@
  *
  *  @return
  */
-+ (NSString *)getGenderFromIdentityNumber:(NSString *)number
++ (NSInteger)getGenderFromIdentityNumber:(NSString *)number
 {
     if ([self checkIdentityNumber:number]) {
         number = [self filterSpecialString:number];
         NSInteger i = [[number substringWithRange:NSMakeRange(number.length - 2, 1)] integerValue];
         if (i % 2 == 1) {
-            return @"man";
+            return 1;
         } else {
-            return @"woman";
+            return 2;
         }
     } else {
-        return nil;
+        return 3;
     }
 }
 /**
@@ -392,13 +392,7 @@
         return nil;
     }
 }
-//过滤特殊字符串
-+ (NSString *)filterSpecialString:(NSString *)string
-{
-    NSCharacterSet *dontWant = [NSCharacterSet characterSetWithCharactersInString:@"[]{}（#%-*+=_）\\|~(＜＞$%^&*)_+,.;':|/@!? "];
-    //stringByTrimmingCharactersInSet只能去掉首尾的特殊字符串
-    return [[[string componentsSeparatedByCharactersInSet:dontWant] componentsJoinedByString:@""] stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-}
+
 
 @end
 

@@ -13,16 +13,12 @@
 		2536BBA36350C1CC5A4DE505CC37BC5E /* UIViewController+Dealloc.h in Headers */ = {isa = PBXBuildFile; fileRef = C8DC8915FA0973246C62F9E55AD51392 /* UIViewController+Dealloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25BF7BC548B0F05EC7DF294746382BC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		2F8E2F2861A0661EBB29102662E5DC5C /* UIImage+CXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 435049E51D5E17C2D475D4DA198C5D84 /* UIImage+CXExtension.m */; };
-		372018D96BC61439E32367B9E24F3DE4 /* UIButton+ImageTitleStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 880ADF18301A3895111CCF8D06E9A3E4 /* UIButton+ImageTitleStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E3FC75244B271A89DC78749DBE73090 /* CXTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9976A91449259A575E66FC50C85F63 /* CXTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		567253AFBADB604116DC50B16EAB2F4B /* UIButton+ImageTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B6BF0680B1C63A75F9B5757F1DF65A /* UIButton+ImageTitleStyle.m */; };
-		589E5016544C3D18CAFFF6627FB56007 /* UISearchBar+textFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 591CEF70CAD34B9F6865C50F65D771CF /* UISearchBar+textFiled.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68306EF8CE1C94D158A9B8FF148137A9 /* UIImage+CXExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EE27C039ECB6296D256A4B0732C2001 /* UIImage+CXExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FAF999173911133D486E52DC1921A82 /* CXTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4550781D43A3E11010C2CC47720E3E59 /* CXTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7084DA37D1C86F2B972E3C6C66914627 /* UIViewController+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE163A74C25F317097AE6F9A49C37F4 /* UIViewController+Dealloc.m */; };
 		74C95BBEA3D6B3467B89E2FFB70A59D7 /* CXTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0796A11A33E33E9CD441D2B7F50D4A85 /* CXTool-dummy.m */; };
 		83584567EF41C0B653D4F3E95661BF6A /* Pods-CXTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF8AA1C8B4947EB68E150DB56D60763 /* Pods-CXTool_Example-dummy.m */; };
-		8DB2D759B1CEB345F438EF4A0C6ADF66 /* UISearchBar+textFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 8297C698D483211364DB7A4F6A07A535 /* UISearchBar+textFiled.m */; };
 		98A44E91594B2D95C02024DA6F500909 /* NSString+CXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CA512F82B611D46065260FFAE90A82 /* NSString+CXExtension.m */; };
 		AD7A7B33E526BF542B7CBF6954151BCB /* CXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 740945F5A2A31984D92B02B29E7BE0C0 /* CXUtils.m */; };
 		AEB35CE62F7A6D67E170F5CBA45A1F6A /* NSString+CXEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E754B33EB613D52495BA87E5E8D7F74 /* NSString+CXEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,40 +49,36 @@
 		19FFBD4E291047AC824B6B5FE641FAF4 /* CXUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXUtils.h; path = CXTool/Classes/CXUtils.h; sourceTree = "<group>"; };
 		1AE163A74C25F317097AE6F9A49C37F4 /* UIViewController+Dealloc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Dealloc.m"; path = "CXTool/Classes/UIViewController+Dealloc.m"; sourceTree = "<group>"; };
 		1E754B33EB613D52495BA87E5E8D7F74 /* NSString+CXEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CXEncrypt.h"; path = "CXTool/Classes/NSString+CXEncrypt.h"; sourceTree = "<group>"; };
-		2259462E0A911DDA4E8599606461EC9E /* CXTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CXTool.framework; path = CXTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2259462E0A911DDA4E8599606461EC9E /* CXTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CXTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3C79EDEDDC1170A7C13EB8072603E1FD /* Pods-CXTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CXTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		42DB3DCF67FA9359155212C157937B03 /* UIButton+CXExpandBtn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+CXExpandBtn.m"; path = "CXTool/Classes/UIButton+CXExpandBtn.m"; sourceTree = "<group>"; };
 		435049E51D5E17C2D475D4DA198C5D84 /* UIImage+CXExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CXExtension.m"; path = "CXTool/Classes/UIImage+CXExtension.m"; sourceTree = "<group>"; };
 		4550781D43A3E11010C2CC47720E3E59 /* CXTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CXTool-umbrella.h"; sourceTree = "<group>"; };
 		47509B04C5AF7B79B4BE64FF975A8E2D /* CXTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CXTool.xcconfig; sourceTree = "<group>"; };
-		4AEADD717F581208FE75C38D59F33A0B /* CXTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CXTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4AEADD717F581208FE75C38D59F33A0B /* CXTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CXTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4AFBE73BE7415A734CE5F868DB0434D7 /* Pods-CXTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CXTool_Example.modulemap"; sourceTree = "<group>"; };
 		4B0F1DF6333AE429B0581C4670B29551 /* Pods-CXTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CXTool_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4F76364395DA4E658AD2150620B30730 /* Pods_CXTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CXTool_Example.framework; path = "Pods-CXTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F76364395DA4E658AD2150620B30730 /* Pods_CXTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		563C479D80487AC85D595A14A79A77E1 /* NSString+CXBOOL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXBOOL.m"; path = "CXTool/Classes/NSString+CXBOOL.m"; sourceTree = "<group>"; };
-		591CEF70CAD34B9F6865C50F65D771CF /* UISearchBar+textFiled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISearchBar+textFiled.h"; path = "CXTool/Classes/UISearchBar+textFiled.h"; sourceTree = "<group>"; };
 		5D9976A91449259A575E66FC50C85F63 /* CXTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXTool.h; path = CXTool/Classes/CXTool.h; sourceTree = "<group>"; };
 		649A10146CF29859FA3148C2DC3A4EA3 /* NSString+CXDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CXDevice.h"; path = "CXTool/Classes/NSString+CXDevice.h"; sourceTree = "<group>"; };
 		740945F5A2A31984D92B02B29E7BE0C0 /* CXUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CXUtils.m; path = CXTool/Classes/CXUtils.m; sourceTree = "<group>"; };
 		7B8E198C4B07FDA4DF0DFED4A4BD4CCE /* CXTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CXTool-Info.plist"; sourceTree = "<group>"; };
-		8297C698D483211364DB7A4F6A07A535 /* UISearchBar+textFiled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISearchBar+textFiled.m"; path = "CXTool/Classes/UISearchBar+textFiled.m"; sourceTree = "<group>"; };
-		880ADF18301A3895111CCF8D06E9A3E4 /* UIButton+ImageTitleStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+ImageTitleStyle.h"; path = "CXTool/Classes/UIButton+ImageTitleStyle.h"; sourceTree = "<group>"; };
 		9C2E7AF35E7AB6A6CDEEAA5D67B0F8C9 /* Pods-CXTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CXTool_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0E9E9715EC1C44CC010171DE21318C2 /* CXTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CXTool-prefix.pch"; sourceTree = "<group>"; };
 		A851ED96425D57A6915294D92B088BA4 /* Pods-CXTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CXTool_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A8586B1FF0E1BD633A16906998FBFE1A /* NSString+CXDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXDevice.m"; path = "CXTool/Classes/NSString+CXDevice.m"; sourceTree = "<group>"; };
 		ACA253ED05F1F172C6BC344575EDA006 /* NSString+CXEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXEncrypt.m"; path = "CXTool/Classes/NSString+CXEncrypt.m"; sourceTree = "<group>"; };
 		B8133AC830970418BD4B82BF6A2E5050 /* Pods-CXTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CXTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BCF8AA1C8B4947EB68E150DB56D60763 /* Pods-CXTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CXTool_Example-dummy.m"; sourceTree = "<group>"; };
-		C4E242A23AACA856ACFD870858DBF7BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C4E242A23AACA856ACFD870858DBF7BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C8DC8915FA0973246C62F9E55AD51392 /* UIViewController+Dealloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Dealloc.h"; path = "CXTool/Classes/UIViewController+Dealloc.h"; sourceTree = "<group>"; };
 		CFE0DDC97DF0D6F480A25E266253473B /* Pods-CXTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CXTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D7F6FA6C6D2CF6AE89476F2CB90CA871 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D7F6FA6C6D2CF6AE89476F2CB90CA871 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E3CA512F82B611D46065260FFAE90A82 /* NSString+CXExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CXExtension.m"; path = "CXTool/Classes/NSString+CXExtension.m"; sourceTree = "<group>"; };
 		E83FA770081CD2F0592F3FD7030FA2A9 /* UIButton+CXExpandBtn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+CXExpandBtn.h"; path = "CXTool/Classes/UIButton+CXExpandBtn.h"; sourceTree = "<group>"; };
-		F2B6BF0680B1C63A75F9B5757F1DF65A /* UIButton+ImageTitleStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ImageTitleStyle.m"; path = "CXTool/Classes/UIButton+ImageTitleStyle.m"; sourceTree = "<group>"; };
 		F30B226241B077CFA4A27D78E2769EDC /* Pods-CXTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CXTool_Example-Info.plist"; sourceTree = "<group>"; };
 		FCEA813F8BCB304D5F7A0450E8F1588B /* NSString+CXBOOL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CXBOOL.h"; path = "CXTool/Classes/NSString+CXBOOL.h"; sourceTree = "<group>"; };
 		FEC82B1AF2A525260F0C31068399B727 /* NSString+CXExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CXExtension.h"; path = "CXTool/Classes/NSString+CXExtension.h"; sourceTree = "<group>"; };
@@ -221,12 +213,8 @@
 				E3CA512F82B611D46065260FFAE90A82 /* NSString+CXExtension.m */,
 				E83FA770081CD2F0592F3FD7030FA2A9 /* UIButton+CXExpandBtn.h */,
 				42DB3DCF67FA9359155212C157937B03 /* UIButton+CXExpandBtn.m */,
-				880ADF18301A3895111CCF8D06E9A3E4 /* UIButton+ImageTitleStyle.h */,
-				F2B6BF0680B1C63A75F9B5757F1DF65A /* UIButton+ImageTitleStyle.m */,
 				0EE27C039ECB6296D256A4B0732C2001 /* UIImage+CXExtension.h */,
 				435049E51D5E17C2D475D4DA198C5D84 /* UIImage+CXExtension.m */,
-				591CEF70CAD34B9F6865C50F65D771CF /* UISearchBar+textFiled.h */,
-				8297C698D483211364DB7A4F6A07A535 /* UISearchBar+textFiled.m */,
 				C8DC8915FA0973246C62F9E55AD51392 /* UIViewController+Dealloc.h */,
 				1AE163A74C25F317097AE6F9A49C37F4 /* UIViewController+Dealloc.m */,
 				7B42646A59B308AFFE247740CA2D7E1E /* Pod */,
@@ -251,9 +239,7 @@
 				AEB35CE62F7A6D67E170F5CBA45A1F6A /* NSString+CXEncrypt.h in Headers */,
 				D119607F7914EBD70D54CD0E00A6AD72 /* NSString+CXExtension.h in Headers */,
 				FEDACF12B2FCEF7B246456E125A4797B /* UIButton+CXExpandBtn.h in Headers */,
-				372018D96BC61439E32367B9E24F3DE4 /* UIButton+ImageTitleStyle.h in Headers */,
 				68306EF8CE1C94D158A9B8FF148137A9 /* UIImage+CXExtension.h in Headers */,
-				589E5016544C3D18CAFFF6627FB56007 /* UISearchBar+textFiled.h in Headers */,
 				2536BBA36350C1CC5A4DE505CC37BC5E /* UIViewController+Dealloc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,9 +356,7 @@
 				10E341F1598DFC34EF32BEC17418EBAF /* NSString+CXEncrypt.m in Sources */,
 				98A44E91594B2D95C02024DA6F500909 /* NSString+CXExtension.m in Sources */,
 				D396BA70AFDA9D7CD459AEE057B3B5C4 /* UIButton+CXExpandBtn.m in Sources */,
-				567253AFBADB604116DC50B16EAB2F4B /* UIButton+ImageTitleStyle.m in Sources */,
 				2F8E2F2861A0661EBB29102662E5DC5C /* UIImage+CXExtension.m in Sources */,
-				8DB2D759B1CEB345F438EF4A0C6ADF66 /* UISearchBar+textFiled.m in Sources */,
 				7084DA37D1C86F2B972E3C6C66914627 /* UIViewController+Dealloc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,8 +457,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

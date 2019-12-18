@@ -22,9 +22,9 @@
 
 
 //编码
--(NSString*)Base64EnCoded;
+- (NSString *)Base64EnCoded;
 //解码
--(NSString*)Base64DeCoded;
+- (NSString *)Base64DeCoded;
 
 
 

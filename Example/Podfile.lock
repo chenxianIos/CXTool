@@ -1,5 +1,5 @@
 PODS:
-  - CXTool (1.1.0)
+  - CXTool (1.1.5)
 
 DEPENDENCIES:
   - CXTool (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CXTool: 9caba5c194ffa6b2c2e526d2cfcbe79a69d7514f
+  CXTool: 2cddc64caa1b3f7b63b2fac7d715330ee7cee803
 
 PODFILE CHECKSUM: df73416920b9f845dfa9d67b13e77cced7c75ad0
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

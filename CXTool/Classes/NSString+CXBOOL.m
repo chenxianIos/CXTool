@@ -80,7 +80,7 @@
 }
 
 
-- (BOOL)IsEnglish
+- (BOOL)isEnglish
 {
     for(int i=0; i< [self length];i++){
         int a = [self characterAtIndex:i];
@@ -91,22 +91,6 @@
 }
 
 
-- (BOOL)isContainChinese
-{
-    NSUInteger length = [self length];
-    for (NSUInteger i = 0; i < length; i++)
-    {
-        NSRange range = NSMakeRange(i, 1);
-        NSString *subString = [self substringWithRange:range];
-        const char *cString = [subString UTF8String];
-        if (strlen(cString) == 3)
-        {
-            return YES;
-        }
-    }
-    return NO;
-}
-
 - (BOOL)isChinese
 {
     NSString *match = @"(^[\u4e00-\u9fa5]+$)";
@@ -114,7 +98,7 @@
     return [predicate evaluateWithObject:self];
 }
 
-- (BOOL)includeChinese
+- (BOOL)isContainChinese
 {
     for(int i=0; i< [self length];i++)
     {
@@ -195,7 +179,7 @@
 #pragma mark -
 
 //手机号分服务商
-- (BOOL)isMobileNumberClassification{
+- (BOOL)isMobileNumber{
     /**
      * 手机号码
      * 移动：134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188,1705
@@ -244,12 +228,6 @@
     }
 }
 
-//手机号有效性
-- (BOOL)isMobileNumber{
-    NSString *mobileRegex = @"^(0|86|17951)?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}$";
-    BOOL ret1 = [self isValidateByRegex:mobileRegex];
-    return ret1;
-}
 
 //邮箱
 - (BOOL)isEmailAddress{
@@ -257,15 +235,9 @@
     return [self isValidateByRegex:emailRegex];
 }
 
-//身份证号
-- (BOOL)simpleVerifyIdentityCardNum
-{
-    NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
-    return [self isValidateByRegex:regex2];
-}
 
 //正则匹配用户身份证号15或18位
-- (BOOL)validateIDCardNumber {
+- (BOOL)isIDCardNumber {
     
     NSString *value = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSInteger length =0;
@@ -366,24 +338,19 @@
     return  [self isValidateByRegex:macAddRegex];
 }
 
-- (BOOL)isValidUrl
+- (BOOL)isUrl
 {
     NSString *regex = @"^((http)|(https))+:[^\\s]+\\.[^\\s]*$";
     return [self isValidateByRegex:regex];
 }
 
-- (BOOL)isValidChinese;
-{
-    NSString *chineseRegex = @"^[\u4e00-\u9fa5]+$";
-    return [self isValidateByRegex:chineseRegex];
-}
 
-- (BOOL)isValidPostalcode {
+- (BOOL)isPostalcode {
     NSString *postalRegex = @"^[0-8]\\d{5}(?!\\d)$";
     return [self isValidateByRegex:postalRegex];
 }
 
-- (BOOL)isValidTaxNo
+- (BOOL)isTaxNo
 {
     NSString *taxNoRegex = @"[0-9]\\d{13}([0-9]|X)$";
     return [self isValidateByRegex:taxNoRegex];

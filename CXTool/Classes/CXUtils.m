@@ -113,15 +113,6 @@
     }
 }
 
-+ (NSString *)replaceStringWithAsterisk:(NSString *)originalStr startLocation:(NSInteger)startLocation lenght:(NSInteger)lenght {
-    NSString *newStr = originalStr;
-    for (int i = 0; i < lenght; i++) {
-        NSRange range = NSMakeRange(startLocation, 1);
-        newStr = [newStr stringByReplacingCharactersInRange:range withString:@"*"];
-        startLocation ++;
-    }
-    return newStr;
-}
 
 // 字典转字符串
 + (NSString*)dictionaryToJson:(NSDictionary *)dic {
@@ -134,7 +125,7 @@
 }
 
 // 字符串字典转 字典
-+(NSDictionary *)parseJSONStringToNSDictionary:(NSString *)JSONString {
++(NSDictionary *)JsonToDictionary:(NSString *)JSONString {
     if (JSONString.length > 0) {
         NSData *JSONData = [JSONString dataUsingEncoding:NSUTF8StringEncoding];
         NSDictionary *responseJSON = [NSJSONSerialization JSONObjectWithData:JSONData options:NSJSONReadingMutableLeaves error:nil];

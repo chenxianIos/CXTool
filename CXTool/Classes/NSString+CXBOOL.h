@@ -24,16 +24,14 @@
 - (BOOL)isPureFloat;
 
 //** 判断为英文 */
-- (BOOL)IsEnglish;
+- (BOOL)isEnglish;
 
-/** 判断URL中是否包含中文 */
+//** 是否包含中文 */
 - (BOOL)isContainChinese;
 
 //判断是否是纯汉字
 - (BOOL)isChinese;
 
-//判断是否含有汉字
-- (BOOL)includeChinese;
 
 //** 是否含有表情符号 */
 -(BOOL)isContainsEmoji;
@@ -41,10 +39,6 @@
 
 /**
  *  手机号码的有效性:分电信、联通、移动和小灵通
- */
-- (BOOL)isMobileNumberClassification;
-/**
- *  手机号有效性
  */
 - (BOOL)isMobileNumber;
 
@@ -54,15 +48,10 @@
 - (BOOL)isEmailAddress;
 
 /**
- *  简单的身份证有效性
+ *  身份证有效性
  *
  */
-- (BOOL)simpleVerifyIdentityCardNum;
-/**
- *  复杂一点的身份证有效性
- *
- */
-- (BOOL)validateIDCardNumber;
+- (BOOL)isIDCardNumber;
 
 /**
  *  车牌号的有效性
@@ -77,7 +66,7 @@
 /**
  *  网址有效性
  */
-- (BOOL)isValidUrl;
+- (BOOL)isUrl;
 
 /**
  *  纯汉字
@@ -87,12 +76,12 @@
 /**
  *  邮政编码
  */
-- (BOOL)isValidPostalcode;
+- (BOOL)isPostalcode;
 
 /**
  *  工商税号
  */
-- (BOOL)isValidTaxNo;
+- (BOOL)isTaxNo;
 
 //以给定字符串开始,忽略大小写
 - (BOOL)startsWith:(NSString *)str;
