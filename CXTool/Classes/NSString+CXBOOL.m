@@ -178,60 +178,58 @@
 
 #pragma mark -
 
-//手机号分服务商
+//手机号 更新时间： 2019 - 01 - 02
 - (BOOL)isMobileNumber{
+    
     /**
-     * 手机号码
-     * 移动：134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188,1705
-     * 联通：130,131,132,152,155,156,185,186,1709
-     * 电信：133,1349,153,180,189,1700,173
+     * 中国移动：China Mobile
+     134 135 136 137 138 139
+     147(上网卡)
+     150 151 152 157 158 159
+     165
+     172 178(4G)
+     182 183 184 187 188
+     1440(物联网) 148(物联网)
+     198
      */
-    //    NSString * MOBILE = @"^1((3//d|5[0-35-9]|8[025-9])//d|70[059])\\d{7}$";//总况
     
     /**
-     10         * 中国移动：China Mobile
-     11         * 134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188，1705
-     12         */
-    NSString * CM = @"^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d|705)\\d{7}$";
-    /**
-     15         * 中国联通：China Unicom
-     16         * 130,131,132,152,155,156,185,186,1709
-     17         */
-    NSString * CU = @"^1((3[0-2]|5[256]|8[56])\\d|709)\\d{7}$";
-    /**
-     20         * 中国电信：China Telecom
-     21         * 133,1349,153,180,189,1700,173
-     22         */
-    NSString * CT = @"^1((33|53|73|8[09])\\d|349|700)\\d{7}$";
-    
+     * 中国联通：China Unicom
+     130 131 132
+     145(上网卡)
+     155 156
+     171 175 176(4G)
+     185 186
+     146(物联网)
+     166
+     */
     
     /**
-     25         * 大陆地区固话及小灵通
-     26         * 区号：010,020,021,022,023,024,025,027,028,029
-     27         * 号码：七位或八位
-     28         */
-    NSString * PHS = @"^0(10|2[0-5789]|\\d{3})\\d{7,8}$";
+     * 中国电信：China Telecom
+     133
+     149
+     153
+     173 174 177(4G)
+     180 181 189
+     191
+     1410(物联网)
+     199
+     */
     
     
-    //    NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
+    /**
+     * 虚拟运营商
+     170 171
+     */
     
-    if (([self isValidateByRegex:CM])
-        || ([self isValidateByRegex:CU])
-        || ([self isValidateByRegex:CT])
-        || ([self isValidateByRegex:PHS]))
-    {
-        return YES;
-    }
-    else
-    {
-        return NO;
-    }
+    NSString *regex = @"^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$";
+    return [self isValidateByRegex:regex];
 }
 
 
 //邮箱
 - (BOOL)isEmailAddress{
-    NSString *emailRegex = @"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSString *emailRegex = @"^[a-z0-9A-Z]+[- | a-z0-9A-Z . _]+@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-z]{2,}$";
     return [self isValidateByRegex:emailRegex];
 }
 
@@ -328,19 +326,38 @@
 
 //车牌
 - (BOOL)isCarNumber{
-    //车牌号:湘K-DE829 香港车牌号码:粤Z-J499港
-    NSString *carRegex = @"^[\u4e00-\u9fff]{1}[a-zA-Z]{1}[-][a-zA-Z_0-9]{4}[a-zA-Z_0-9_\u4e00-\u9fff]$";//其中\u4e00-\u9fa5表示unicode编码中汉字已编码部分，\u9fa5-\u9fff是保留部分，将来可能会添加
+    /**
+         * 第一：普通汽车
+         * 车牌号格式：汉字 + A-Z + 5位A-Z或0-9(  车牌号不存在字母I和O防止和1、0混淆)
+         * （只包括了普通车牌号，教练车，警等车牌号 。部分部队车，新能源不包括在内）
+         * 京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼军空海北沈兰济南广成使领
+         * 普通汽车规则："[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}"
+         *
+         *  第二：新能源车
+         * 组成：省份简称（1位汉字）+发牌机关代号（1位字母）+序号（6位），总计8个字符，序号不能出现字母I和字母O
+         * 通用规则：不区分大小写，第一位：省份简称（1位汉字），第二位：发牌机关代号（1位字母）
+         * 序号位：
+         * 小型车，第一位：只能用字母D或字母F，第二位：字母或者数字，后四位：必须使用数字
+         * ---([DF][A-HJ-NP-Z0-9][0-9]{4})
+         * 大型车，前五位：必须使用数字，第六位：只能用字母D或字母F。
+         * ----([0-9]{5}[DF])
+         * 新能源车规则："[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF])|([DF][A-HJ-NP-Z0-9][0-9]{4}))"
+         *
+         * 总规则："([京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF])|([DF]([A-HJ-NP-Z0-9])[0-9]{4})))|([京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1})"
+         */
+    
+    NSString *carRegex = @"^([京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF])|([DF]([A-HJ-NP-Z0-9])[0-9]{4})))|([京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1})$";
     return [self isValidateByRegex:carRegex];
 }
 
 - (BOOL)isMacAddress{
-    NSString * macAddRegex = @"([A-Fa-f\\d]{2}:){5}[A-Fa-f\\d]{2}";
+    NSString * macAddRegex = @"^/((([a-f0-9]{2}:){5})|(([a-f0-9]{2}-){5}))[a-f0-9]{2}/gi$";
     return  [self isValidateByRegex:macAddRegex];
 }
 
 - (BOOL)isUrl
 {
-    NSString *regex = @"^((http)|(https))+:[^\\s]+\\.[^\\s]*$";
+    NSString *regex = @"^(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]$";
     return [self isValidateByRegex:regex];
 }
 
@@ -348,12 +365,6 @@
 - (BOOL)isPostalcode {
     NSString *postalRegex = @"^[0-8]\\d{5}(?!\\d)$";
     return [self isValidateByRegex:postalRegex];
-}
-
-- (BOOL)isTaxNo
-{
-    NSString *taxNoRegex = @"[0-9]\\d{13}([0-9]|X)$";
-    return [self isValidateByRegex:taxNoRegex];
 }
 
 - (BOOL)startsWith:(NSString *)str

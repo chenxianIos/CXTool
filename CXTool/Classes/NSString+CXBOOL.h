@@ -11,34 +11,32 @@
 
 - (BOOL)isEmpty;
 
-//** 判断是否含有空格 */
+/** 判断是否含有空格 */
 - (BOOL)isContainWhiteCharacter;
 
-//当前字符串是否只包含空白字符和换行符
+/** 当前字符串是否只包含空白字符和换行符 */
 - (BOOL)isWhitespaceAndNewlines;
 
-//判断是否为整形
+/** 判断是否为整形 */
 - (BOOL)isPureInt;
 
-//判断是否为浮点形
+/** 判断是否为浮点形 */
 - (BOOL)isPureFloat;
 
-//** 判断为英文 */
+/** 判断为英文 */
 - (BOOL)isEnglish;
 
-//** 是否包含中文 */
+/** 是否包含中文 */
 - (BOOL)isContainChinese;
 
-//判断是否是纯汉字
+/** 判断是否是纯汉字 */
 - (BOOL)isChinese;
 
-
-//** 是否含有表情符号 */
+/** 是否含有表情符号 */
 -(BOOL)isContainsEmoji;
 
-
 /**
- *  手机号码的有效性:分电信、联通、移动和小灵通
+ *  手机号码的有效性:更新时间： 2019 - 01 - 02
  */
 - (BOOL)isMobileNumber;
 
@@ -69,19 +67,10 @@
 - (BOOL)isUrl;
 
 /**
- *  纯汉字
- */
-- (BOOL)isValidChinese;
-
-/**
  *  邮政编码
  */
 - (BOOL)isPostalcode;
 
-/**
- *  工商税号
- */
-- (BOOL)isTaxNo;
 
 //以给定字符串开始,忽略大小写
 - (BOOL)startsWith:(NSString *)str;
